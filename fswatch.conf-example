@@ -1,0 +1,37 @@
+[searchapp]
+##
+# http://some-url-here/manage/searchengine/reports/
+# search key : Search Key
+# app_key : Session Key
+# base_url : http://some-url-here, e.g.
+# app : default
+# schema : your-search-schema
+search_key=100000abcdc123439f7a755e3f585c3b
+app_key=632aeb0e23c8cebf4e3652f0bb0279c1
+base_url=http://localhost
+schema=watchdog
+app=test-app
+
+[fswatch]
+##
+# database settings
+# fswatch expects a database with one
+# table, which it will create
+# add creds here
+# currently, only Postgres has been used and tested
+
+dbname=watchdog
+dbuser=watchdog
+dbpass=somepassword
+dbhost=localhost
+dbport=5432
+
+###
+# watch_dir, can be set here
+# or overriden with the -d switch to dwatch
+#
+watch_dir=/home/myuser/documents
+
+[file-types]
+# extension of filetypes to be indexed
+mime-types=doc,docx,pdf,csv,xls,xlsx
