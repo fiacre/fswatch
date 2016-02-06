@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class FSConfig(object):
+class FSConfig:
     """
     uses ConfigParser
     read :configfile
